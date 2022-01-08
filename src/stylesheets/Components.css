@@ -1,0 +1,114 @@
+
+.fa-user-alt{
+    color: white;
+}
+.navUl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    background-color: black;
+    height: 85px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navUlHome{
+    margin-left: 130px;
+}
+
+.navUlPerson{
+    position: absolute;
+    right: 165px;
+}
+
+.navUl li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.UlBurger{
+    display: none;
+    color: white;
+    
+}
+
+@media (max-width:1400px) {
+    .navUlHome{
+        margin-left: 80px;
+    }
+    .navUlPerson{
+        position: absolute;
+        right: 80px;
+    }
+    .navUl li a{
+        font-size: 16px;
+    }
+    .navUl{
+        gap: 40px;
+    }
+}
+
+@media (max-width:992px) {
+    .navUlHome{
+        margin-left: 20px;
+    }
+    .navUlPerson{
+        position: absolute;
+        right: 20px;
+    }
+    .navUl li a{
+        font-size: 12px;
+    }
+    .navUl{
+        gap: 30px;
+    }
+}
+
+@media (max-width:576px) {
+    .navUl{
+        gap: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .navUlHome{
+        margin-left: 9px;
+    }
+    .navUlPerson{
+        position: absolute;
+        right: 8px;
+    }
+    .navUl{
+        gap: 8px;
+    }
+    .navUl li a{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:320px) {
+    .UlBurger{
+        display: block;
+    }
+    .navUl{
+        flex-direction: column;
+        height: 100%;
+        position: fixed;
+    }
+    .navUlPerson{
+        flex-direction: column;
+        position: relative;
+    }
+
+}
+
+
+
+/*  xxxl:1920px
+    xxl: 1400px
+    sm: 576px,
+    md: 768px, */
