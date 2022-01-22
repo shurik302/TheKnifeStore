@@ -164,19 +164,111 @@
     padding-left: 140px;
     display: flex;
     align-items: center;
+    position: relative;
 }
-.catalogeHead ol{
+.catalogeHeadOl{
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 116px;
     
 }
-.catalogeHead ol li{
+.catalogeHeadOl li{
     letter-spacing: 0.3px;
     font-size: 18px;
+    /* border: 2px solid blue; */
+    padding:24px 0px 24px 0px;
+    cursor: pointer;
 }
 
+
+.catalogeHeadDown{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    /* border: 2px solid red; */
+    visibility: visible;
+    margin-top: 24px;
+    
+}
+
+.catalogeHeadOl li:hover{
+    color: #E8AA31;
+    /* border-bottom: 4px solid#E8AA31; */
+}
+.catalogeHeadOlKnife:hover:after,
+.catalogeHeadOlKLinkKnife:hover:after,
+.catalogeHeadOlSuvenir:hover:after,
+.catalogeHeadOlLight:hover:after,
+.catalogeHeadOlSoputTov:hover:after{
+    content: '';
+    border-bottom: 4px solid#E8AA31;
+    position: absolute;
+    top: 66px;
+}
+
+.catalogeHeadOlKnife:hover:after{
+    left: 181px;
+    width: 139px;
+}
+
+.catalogeHeadOlKLinkKnife:hover:after{
+    left: 436px;
+    width: 179px;
+}
+
+.catalogeHeadOlSuvenir:hover:after{
+    left: 730px;
+    width: 203px;
+}
+
+.catalogeHeadOlLight:hover:after{
+    left: 1048px;
+    width: 170px;
+}
+
+.catalogeHeadOlSoputTov:hover:after{
+    left: 1335px;
+    width: 220px;
+}
+
+.catalogeHeadOl li:hover>.catalogeHeadDown{
+    visibility: visible;
+}
+
+.line{
+    width: 72%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 180px;
+}
+
+.CenterDown{
+    display: flex;
+    flex-direction: row;
+}
+
+.TopCatalogeHeadDownOl{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 95px;
+}
+
+.TopCatalogeHeadDownOl li{
+    font-size: 16px;
+}
+
+.DownOl li{
+    padding: 25px 0px 0px 0px;
+    /* border: 1px solid red; */
+}
+
+.DownOl li a{
+    font-size: 16px;
+}
 
 
 @media (max-width:1400px) {

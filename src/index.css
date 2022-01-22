@@ -5,4 +5,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+ol,
+ul{
+  list-style-type:none ;
+}
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.leftSpacing{
+  margin-left: 140px;
+}

@@ -54,12 +54,77 @@ function Navigation() {
             </div>
           </div>
           <div className='catalogeHead'>
-            <ol>
-              <li>Каталог ножей</li>
-              <li>Клинковое оружие</li>
-              <li>Сувенирные изделия</li>
-              <li>Фонари ARMYTEK</li>
-              <li>Сопутствующие товары</li>
+            <ol className='catalogeHeadOl'>
+              <li className='catalogeHeadOlKnife '>Каталог ножей
+                <div className='catalogeHeadDown'>
+                  <div className='TopCatalogeHeadDown'>
+                    <ol className='TopCatalogeHeadDownOl leftSpacing'>
+                      <li>Категория ножей</li>
+                      <li>Производство ножей</li>
+                      <li>Ножи по маркам стали</li>
+                      <li>Заточка и полировка ножей</li>
+                      <li>Ножевая мастерская</li>
+                    </ol>
+                  </div>
+                  <div className='line'></div>
+                  <div className='CenterDown'>
+                    <ol className='DownOl leftSpacing'>
+                      <li><a href=''>Разделочные ножи</a></li>
+                      <li><a href=''>Туристические ножи</a></li>
+                      <li><a href=''>Ножи охотничьи</a></li>
+                      <li><a href=''>Булатные ножи</a></li>
+                      <li><a href=''>Ножи из дамаска</a></li>
+                      <li><a href=''>Тактического назначения</a></li>
+                      <li><a href=''>Метательные ножи</a></li>
+                      <li><a href=''>Мачете и кукри</a></li>
+                      <li><a href=''>Ножи кухонные</a></li>
+                    </ol>
+                    <ol className='DownOl'>
+                      <li><a href=''>Разделочные ножи</a></li>
+                      <li><a href=''>Туристические ножи</a></li>
+                      <li><a href=''>Ножи охотничьи</a></li>
+                      <li><a href=''>Булатные ножи</a></li>
+                      <li><a href=''>Ножи из дамаска</a></li>
+                      <li><a href=''>Тактического назначения</a></li>
+                      <li><a href=''>Метательные ножи</a></li>
+                      <li><a href=''>Мачете и кукри</a></li>
+                      <li><a href=''>Ножи кухонные</a></li>
+                      <li><a href=''>Ножи кухонные</a></li>
+                    </ol>
+                    <ol className='DownOl'>
+                      <li><a href=''>Разделочные ножи</a></li>
+                      <li><a href=''>Туристические ножи</a></li>
+                      <li><a href=''>Ножи охотничьи</a></li>
+                      <li><a href=''>Булатные ножи</a></li>
+                      <li><a href=''>Ножи из дамаска</a></li>
+                      <li><a href=''>Тактического назначения</a></li>
+                      <li><a href=''>Метательные ножи</a></li>
+                      <li><a href=''>Мачете и кукри</a></li>
+                      <li><a href=''>Ножи кухонные</a></li>
+                      <li><a href=''>Ножи кухонные</a></li>
+                    </ol>
+                    <ol className='DownOl'>
+                      <li><a href=''>Разделочные ножи</a></li>
+                      <li><a href=''>Туристические ножи</a></li>
+                      <li><a href=''>Ножи охотничьи</a></li>
+                      <li><a href=''>Булатные ножи</a></li>
+                    </ol>
+                    <ol className='DownOl'>
+                      <li><a href=''>Разделочные ножи</a></li>
+                      <li><a href=''>Туристические ножи</a></li>
+                      <li><a href=''>Ножи охотничьи</a></li>
+                      <li><a href=''>Булатные ножи</a></li>
+                      <li><a href=''>Ножи из дамаска</a></li>
+                    </ol>
+                  </div>
+                  <div className='line'></div>
+                  <div className='BottomCatalogeHeadDropDown'></div>
+                </div>
+              </li>
+              <li className='catalogeHeadOlKLinkKnife'>Клинковое оружие</li>
+              <li className='catalogeHeadOlSuvenir'>Сувенирные изделия</li>
+              <li className='catalogeHeadOlLight'>Фонари ARMYTEK</li>
+              <li className='catalogeHeadOlSoputTov'>Сопутствующие товары</li>
             </ol>
           </div>
           
