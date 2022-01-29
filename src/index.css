@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
+  padding-inline-start: 0px;
 }
 
 ol,

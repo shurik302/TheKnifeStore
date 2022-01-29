@@ -248,6 +248,7 @@
 .CenterDown{
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 .TopCatalogeHeadDownOl{
@@ -255,10 +256,21 @@
     flex-direction: row;
     color: white;
     gap: 95px;
+    font-size: 18px;
 }
 
 .TopCatalogeHeadDownOl li{
     font-size: 16px;
+}
+
+.DownOl{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-inline-start: 0px;
+    color: white;
 }
 
 .DownOl li{
@@ -270,6 +282,25 @@
     font-size: 16px;
 }
 
+.DownOlf{
+    margin-left: 180px;
+}
+
+.DownOls{
+    margin-left: 25px;
+}
+
+.DownOt{
+    margin-left: 79px;
+}
+
+.DownOlfourth{
+    margin-left: 65px;
+}
+
+.DownOlfifth{
+    margin-left: 95px;
+}
 
 @media (max-width:1400px) {
     .navUlHome{
