@@ -176,27 +176,23 @@
 .catalogeHeadOl li{
     letter-spacing: 0.3px;
     font-size: 18px;
-    /* border: 2px solid blue; */
     padding:24px 0px 24px 0px;
-    cursor: pointer;
 }
 
 
 .catalogeHeadDown{
     width: 100%;
-    height: 600px;
+    height: 605px;
     background-color: black;
     position: absolute;
     left: 0;
-    /* border: 2px solid red; */
-    visibility: visible;
+    visibility: hidden;
     margin-top: 24px;
     
 }
 
-.catalogeHeadOl li:hover{
+.catalogeHeadOl li:hover>a{
     color: #E8AA31;
-    /* border-bottom: 4px solid#E8AA31; */
 }
 .catalogeHeadOlKnife:hover:after,
 .catalogeHeadOlKLinkKnife:hover:after,
@@ -207,6 +203,7 @@
     border-bottom: 4px solid#E8AA31;
     position: absolute;
     top: 66px;
+    
 }
 
 .catalogeHeadOlKnife:hover:after{
@@ -238,30 +235,42 @@
     visibility: visible;
 }
 
-.line{
+
+.linet,
+.lineb{
     width: 72%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin-left: 180px;
+    border-color: rgba(255, 255, 255, 0.3);
+    height: 0px;
+}
+.linet{
+    margin: 0px 0px 6px 180px ;
+}
+
+.lineb{
+    margin: 25px 0px 0px 180px ;
 }
 
 .CenterDown{
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
 }
 
 .TopCatalogeHeadDownOl{
     display: flex;
     flex-direction: row;
     color: white;
+    align-items: center;
     gap: 95px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 80px;
 }
 
 .TopCatalogeHeadDownOl li{
     font-size: 16px;
+    letter-spacing: 0.6px;
 }
+
 
 .DownOl{
     font-family: Montserrat;
@@ -274,7 +283,7 @@
 }
 
 .DownOl li{
-    padding: 25px 0px 0px 0px;
+    padding:20px 0px 0px 0px;
     /* border: 1px solid red; */
 }
 
@@ -287,19 +296,50 @@
 }
 
 .DownOls{
-    margin-left: 25px;
+    margin-left: 29px;
 }
 
 .DownOt{
-    margin-left: 79px;
+    margin-left: 84px;
 }
 
 .DownOlfourth{
-    margin-left: 65px;
+    margin-left: 71px;
 }
 
 .DownOlfifth{
-    margin-left: 95px;
+    margin-left: 102px;
+}
+
+
+
+.showallCatKnife{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 12px;
+    height: 80px;
+    
+}
+
+.showallCatKnife li:nth-child(2){
+    margin-left: 134px;
+}
+
+.showallCatKnife li:nth-child(3){
+    margin-left: 168px;
+}
+
+.showallCatKnife li:nth-child(4){
+    margin-left: 171px;
+}
+
+.showallCatKnife li:nth-child(5){
+    margin-left: 227px;
+}
+
+.showallCatKnife li{
+    font-size: 16px;
 }
 
 @media (max-width:1400px) {

@@ -55,7 +55,7 @@ function Navigation() {
           </div>
           <div className='catalogeHead'>
             <ol className='catalogeHeadOl'>
-              <li className='catalogeHeadOlKnife '>Каталог ножей
+              <li className='catalogeHeadOlKnife '><a href='#'>Каталог ножей</a>
                 <div className='catalogeHeadDown'>
                   <div className='TopCatalogeHeadDown'>
                     <ol className='TopCatalogeHeadDownOl leftSpacing'>
@@ -66,7 +66,7 @@ function Navigation() {
                       <li>Ножевая мастерская</li>
                     </ol>
                   </div>
-                  <div className='line'></div>
+                  <hr className='linet'/>
                   <div className='CenterDown'>
                     <ol className='DownOl leftSpacing DownOlf'>
                       <li><a href=''>Разделочные ножи</a></li>
@@ -117,14 +117,22 @@ function Navigation() {
                       <li><a href=''>Уход за рукоятиями ножей</a></li>
                     </ol>
                   </div>
-                  <div className='line'></div>
-                  <div className='BottomCatalogeHeadDropDown'></div>
+                  <hr className='lineb'/>
+                  <div className='BottomCatalogeHeadDropDown leftSpacing'>
+                    <ol className='showallCatKnife'>
+                      <li>Смотреть все</li>
+                      <li>Смотреть все</li>
+                      <li>Смотреть все</li>
+                      <li>Смотреть все</li>
+                      <li>Смотреть все</li>
+                    </ol>
+                  </div>
                 </div>
               </li>
-              <li className='catalogeHeadOlKLinkKnife'>Клинковое оружие</li>
-              <li className='catalogeHeadOlSuvenir'>Сувенирные изделия</li>
-              <li className='catalogeHeadOlLight'>Фонари ARMYTEK</li>
-              <li className='catalogeHeadOlSoputTov'>Сопутствующие товары</li>
+              <li className='catalogeHeadOlKLinkKnife'><a href='#'>Клинковое оружие</a></li>
+              <li className='catalogeHeadOlSuvenir'><a href='#'>Сувенирные изделия</a></li>
+              <li className='catalogeHeadOlLight'><a href='#'>Фонари ARMYTEK</a></li>
+              <li className='catalogeHeadOlSoputTov'><a href='#'>Сопутствующие товары</a></li>
             </ol>
           </div>
           
