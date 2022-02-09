@@ -17,21 +17,95 @@
 
 .knifeTitle{
     margin-top: 35px;
+    margin-left: 172px;
 }
 
 .knifeTitle img{
     position: absolute;
     z-index: 10;
-    border: 1px solid red;
 }
 
 .circle{
+    /* margin-right: 126px; */
     position: absolute;
     width: 420px;
     height: 420px;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.5);
-    right: 166px;
+    right: 127px;
     top: 90px;
     z-index: 1;
+}
+
+.bottomTitle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 198px;
+    padding: 0px 160px 0px 160px;
+    justify-content: space-between;
+}
+
+.bottomTitle div{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomTitle div span{
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.verifyTitle div{
+    height: 64px;
+    width: 247px;
+}
+
+.verifyTitle div img{
+    height: 100%;
+    width: 64px;
+}
+
+.transportTitle div{
+    width: 255px;
+    height: 60px;
+}
+
+.transportTitle div img{
+    height: 100%;
+    width: 90px;
+}
+
+.settingsTitle div{
+    width: 274px;
+    height: 77px;
+}
+
+.settingsTitle div img{
+    height: 100%;
+    width: 74px;
+}
+
+.procentsTitle div{
+    width: 211px;
+    height: 66px;
+    text-align: center;
+}
+
+.procentsTitle div img{
+    height: 100%;
+    width: 67px;
+
+}
+
+.verifyTitle div img,
+.transportTitle div img,
+.settingsTitle div img,
+.procentsTitle div img{
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
 }

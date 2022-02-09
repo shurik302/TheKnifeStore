@@ -166,6 +166,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 998;
 }
 .catalogeHeadOl{
     display: flex;
@@ -417,9 +418,10 @@
 
 
 .AllSlide{
+    margin-left: 92px;
     height:338px;
-    width:1000px;
-    padding: 45px 90px 0px 0px;
+    width:900px;
+    padding: 45px 32px 0px 0px;
     z-index: 10;
     color: white;
 }
@@ -431,9 +433,14 @@
 
 .title,
 .titleBott{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.03em;
     font-size: 36px;
     line-height: 46px;
     margin-left: 70px;
+    font-weight: 900;
 }
 .title{
     margin-bottom: 30px
