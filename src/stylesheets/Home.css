@@ -109,3 +109,67 @@
     justify-content: center; */
     margin: 0 auto;
 }
+
+.AllCategories{
+    padding: 0px 166px 0px 166px;
+    margin-top: 100px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 33px 30px;
+}
+
+.categorie{
+    width: 509px;
+    height: 293px;
+    border: solid 1px red;
+    box-shadow:0px 0px 10px grey ;
+    position: relative;
+    overflow: hidden;
+}
+
+.categorie span{
+    display: block;
+    font-size: 23px;
+    margin-top: 27px;
+    margin-left: 32px;
+}
+
+.categorie hr{
+    /* 68*2 */
+    width: 68px;
+    height: 2px; 
+    border: none; 
+    background-color: #E8AA31; /*  - так нужно */
+    color: #E8AA31;  /*  - так нужно */
+    margin-left: 30px;
+    margin-top: 21px;
+    
+}
+
+.categorie ul{
+    list-style-type:disc ;
+    color: #E8AA31;
+    margin-top: 40px;
+}
+
+.categorie ul li span{
+    color: black;
+    font-size: 13px;
+    margin: 30px 0px 0px 0px;
+}
+
+.FCat img{
+    /* 61*276 */
+    height: 276px;
+    position: absolute;
+    top:30px;
+    left: 262px;
+}
+
+.SCat img{
+    /* 83*270 */
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+}

@@ -11,7 +11,8 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay:true,
-      autoplaySpeed: 15000
+      autoplaySpeed: 1500,
+      cssEase: 'ease-in-out'
     };
     return (
       <div className="AllSlide">
@@ -53,11 +54,11 @@ export default class SimpleSlider extends Component {
 
 const cssstyle = `
 
-.slick-dots li{
+.AllSlide .slick-dots li{
     margin:0 15px;
 }
 
-.slick-dots{
+.AllSlide .slick-dots{
   max-width:212px;
   margin-left: 48px;
 
@@ -66,7 +67,7 @@ const cssstyle = `
   content: "";
   font-size: 0;
 }
-.slick-dots li button {
+.AllSlide .slick-dots li button {
   font-size: 0;
   line-height: 0;
   width: 20px;
@@ -77,7 +78,7 @@ const cssstyle = `
     text-indent: -9999px; //убрать точки
 }
 
-li.slick-active button {
+.AllSlide li.slick-active button {
 background-color: #E8AA31;
         
 }

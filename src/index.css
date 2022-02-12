@@ -4,6 +4,7 @@ body {
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   padding-inline-start: 0px;
+  overflow-x: hidden;
 }
 
 ol,
@@ -19,3 +20,4 @@ a{
 .leftSpacing{
   margin-left: 140px;
 }
+
