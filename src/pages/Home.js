@@ -103,7 +103,11 @@ function Home() {
                     </ul>
                 </div>
             </div>
-            <SliderCards/>
+            <div>
+                <span></span>
+                <a></a>
+            </div>
+            {/* <SliderCards/> */}
         </div>
     )
 }

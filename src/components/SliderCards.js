@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import SmallCard from '../components/SmallCard';
+import KnifeLisa from "../product/KnifeLisa";
+import Lantern from "../product/Lantern";
 
 export default class MultipleItems extends Component {
   render() {
@@ -16,156 +18,54 @@ export default class MultipleItems extends Component {
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <style>{cssstyle}</style>
+        <div>
+
+        </div>
         <Slider {...settings}>
           <div>
-            <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+            <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <Lantern/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
           <div>
-          <SmallCard
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='98*18'
-                material='Орех,алюминий'
-                quantity='12'
-                price='2119 грн.'
-            />
+          <KnifeLisa/>
           </div>
         </Slider>
       </div>

@@ -21,7 +21,7 @@ function Navigation() {
               <Link to="/contacts">Контакты</Link>
             </li>
             <li className='navUlPerson'>
-              <Link to="/personal_cabinet"><i class="fas fa-user-alt"></i> Личный кабинет</Link>
+              <Link to="/personal_cabinet"><i class="fas fa-user-alt"></i> <span className='uCab'>Личный кабинет</span></Link>
             </li>
             <li className='UlBurger'>
                 <i class="fas fa-bars"></i>
