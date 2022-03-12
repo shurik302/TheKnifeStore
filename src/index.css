@@ -4,7 +4,8 @@ body {
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   padding-inline-start: 0px;
-
+  max-width: 100%;
+  overflow-x: hidden;
 }
 html{
   width: 100%;
@@ -12,12 +13,6 @@ html{
   
 }
 
-/* html, */
-body{
-/*   width: 100%; */
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 ol,
 ul{

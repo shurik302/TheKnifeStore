@@ -21,25 +21,25 @@ export default class SimpleSlider extends Component {
         <style>{cssstyle}</style>
         <Slider {...settings}>
           
-            <div>
+            <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
               <span className="titleBott">златоустовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>
-            <div>
+            <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
               <span className="titleBott">златоустовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>
-            <div>
+            <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
               <span className="titleBott">златоустовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>
-            <div>
+            <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
               <span className="titleBott">златоустовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
@@ -55,12 +55,11 @@ export default class SimpleSlider extends Component {
 const cssstyle = `
 
 .AllSlide .slick-dots li{
-    margin:0 15px;
+    margin: 0px 15px;
 }
 
 .AllSlide .slick-dots{
   max-width:212px;
-  margin-left: 48px;
 
 }
 .slick-next:before, .slick-prev:before {

@@ -114,7 +114,7 @@
 }
 
 .AllCategories{
-    padding: 0px 166px 0px 166px;
+    margin: auto;
     margin-top: 100px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -126,7 +126,6 @@
 .categorie{
     width: 509px;
     height: 293px;
-    border: solid 1px red;
     box-shadow:0px 0px 10px grey ;
     position: relative;
     overflow: hidden;
@@ -181,9 +180,8 @@
 
 
 
-@media (max-width:1400px) {
+@media (max-width:1600px) {
     .AllCategories{
-        padding: 0px 166px 0px 166px;
         margin-top: 100px;
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);

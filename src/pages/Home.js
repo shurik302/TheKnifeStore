@@ -107,7 +107,36 @@ function Home() {
                 <span></span>
                 <a></a>
             </div>
-            {/* <SliderCards/> */}
+            {/* <SliderCards
+                imageCard={require('../images/knifeLisa.png')}
+                name='Нож Лиса'
+                size='95*18'
+                material='Орех, Алюминий'
+                quantity='12'
+                price='2119'
+
+                imageCards={require('../images/fonar.png')}
+                names='Фонарик'
+                sizes='95*18'
+                materials='Алюминий'
+                quantitys='18'
+                prices='715'
+            />
+            <SliderCards
+                imageCard={require('../images/knifeLisa.png')}
+                name='Нож Лиса'
+                size='95*18'
+                material='Орех, Алюминий'
+                quantity='12'
+                price='2119'
+
+                imageCards={require('../images/fonar.png')}
+                names='Фонарик'
+                sizes='95*18'
+                materials='Алюминий'
+                quantitys='18'
+                prices='715'
+            /> */}
         </div>
     )
 }

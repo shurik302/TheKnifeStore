@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import SmallCard from '../components/SmallCard';
 import KnifeLisa from "../product/KnifeLisa";
 import Lantern from "../product/Lantern";
+import star from '../images/star.png'
 
 export default class MultipleItems extends Component {
   render() {
@@ -23,10 +24,74 @@ export default class MultipleItems extends Component {
         </div>
         <Slider {...settings}>
           <div>
-            <KnifeLisa/>
+          <div className='AllSCard'>
+        <div className='divInImg'>
+            <img src={this.props.imageCard}/>
+        </div>
+
+        <div className='infoCard'>
+            <span className='nameKnife'>{this.props.name}</span>
+            <div className='info'>
+                <span className='size'>{this.props.size}</span>
+                <span className='material'>{this.props.material}</span>
+            </div>
+            <div className='raiting'>
+                <div>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                </div>
+                <span className='quantityRevios'>{this.props.quantity} отзывов</span>
+            </div>
+            <hr/>
+               <div className='priceAndAnother'>
+                    <span className='price'>{this.props.price}</span>
+                    <div className='favoritesAndComparison'>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+            </div> 
+            <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>   
+        </div>
+    </div>
+
+
           </div>
           <div>
-          <Lantern/>
+          <div className='AllSCard'>
+        <div className='divInImg'>
+            <img src={this.props.imageCards}/>
+        </div>
+
+        <div className='infoCard'>
+            <span className='nameKnife'>{this.props.names}</span>
+            <div className='info'>
+                <span className='size'>{this.props.sizes}</span>
+                <span className='material'>{this.props.materials}</span>
+            </div>
+            <div className='raiting'>
+                <div>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                </div>
+                <span className='quantityRevios'>{this.props.quantitys} отзывов</span>
+            </div>
+            <hr/>
+               <div className='priceAndAnother'>
+                    <span className='price'>{this.props.prices}</span>
+                    <div className='favoritesAndComparison'>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+            </div> 
+            <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>   
+        </div>
+    </div>
           </div>
           <div>
           <KnifeLisa/>
@@ -75,13 +140,29 @@ export default class MultipleItems extends Component {
 
 const cssstyle = `
 
+
+
+.SliderCards{
+  margin-top:0px;
+  height:fit-content;
+  margin-top:93px;
+}
+
+.SliderCards{
+  position:relative;
+}
+
 .SliderCards .slick-dots li{
     margin:0 15px;
 }
 
 .SliderCards .slick-dots{
-  
-
+  /* max-width:212px; */
+  width:fit-content;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  /* bottom:-100px; */
 }
 .slick-next:before, .slick-prev:before {
   content: "";
