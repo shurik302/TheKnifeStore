@@ -9,7 +9,7 @@ import transport from '../images/transport.png';
 import fCat from '../images/fCat.png';
 import sCat from '../images/sCat.png';
 import SliderCards from '../components/SliderCards'
-
+import Block from '../components/Block';
 
 
 
@@ -107,36 +107,17 @@ function Home() {
                 <span></span>
                 <a></a>
             </div>
-            {/* <SliderCards
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='95*18'
-                material='Орех, Алюминий'
-                quantity='12'
-                price='2119'
-
-                imageCards={require('../images/fonar.png')}
-                names='Фонарик'
-                sizes='95*18'
-                materials='Алюминий'
-                quantitys='18'
-                prices='715'
-            />
+            
             <SliderCards
-                imageCard={require('../images/knifeLisa.png')}
-                name='Нож Лиса'
-                size='95*18'
-                material='Орех, Алюминий'
-                quantity='12'
-                price='2119'
+            nameSlider='Хит продаж'
+            toPage='Перейти в каталог'
+            />
+            <SliderCards/>
+            <SliderCards/>
+            <SliderCards/>
+            
 
-                imageCards={require('../images/fonar.png')}
-                names='Фонарик'
-                sizes='95*18'
-                materials='Алюминий'
-                quantitys='18'
-                prices='715'
-            /> */}
+            <Block/> 
         </div>
     )
 }

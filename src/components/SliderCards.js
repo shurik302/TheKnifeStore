@@ -3,37 +3,41 @@ import Slider from "react-slick";
 import SmallCard from '../components/SmallCard';
 import KnifeLisa from "../product/KnifeLisa";
 import Lantern from "../product/Lantern";
-import star from '../images/star.png'
+import star from '../images/star.png';
+import { targets } from "./Collection";
+import '../stylesheets/Components.css';
+import { settings } from "./Collection";
 
 export default class MultipleItems extends Component {
   render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4
-    };
+    
+    const random = targets.sort(()=>Math.random() - Math.random())
+    .sort(()=>true);
     return (
       <div className="SliderCards">
-        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <style>{cssstyle}</style>
         <div>
 
         </div>
+        <div className="upSlider">
+          <h1>{this.props.nameSlider}</h1>
+          <a href="#">{this.props.toPage} <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        
         <Slider {...settings}>
-          <div>
+          
+          {targets.map((target,id)=>(
+            <div>
           <div className='AllSCard'>
         <div className='divInImg'>
-            <img src={this.props.imageCard}/>
+            <img src={target.img}/>
         </div>
 
         <div className='infoCard'>
-            <span className='nameKnife'>{this.props.name}</span>
+            <span className='nameKnife'>{target.name}</span>
             <div className='info'>
-                <span className='size'>{this.props.size}</span>
-                <span className='material'>{this.props.material}</span>
+                <span className='size'>{target.size}</span>
+                <span className='material'>{target.material}</span>
             </div>
             <div className='raiting'>
                 <div>
@@ -43,11 +47,11 @@ export default class MultipleItems extends Component {
                     <img src={star}/>
                     <img src={star}/>
                 </div>
-                <span className='quantityRevios'>{this.props.quantity} отзывов</span>
+                <span className='quantityRevios'>{target.quantity} отзывов</span>
             </div>
             <hr/>
                <div className='priceAndAnother'>
-                    <span className='price'>{this.props.price}</span>
+                    <span className='price'>{target.price}</span>
                     <div className='favoritesAndComparison'>
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-scale-balanced"></i>
@@ -56,82 +60,9 @@ export default class MultipleItems extends Component {
             <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>   
         </div>
     </div>
-
-
-          </div>
-          <div>
-          <div className='AllSCard'>
-        <div className='divInImg'>
-            <img src={this.props.imageCards}/>
-        </div>
-
-        <div className='infoCard'>
-            <span className='nameKnife'>{this.props.names}</span>
-            <div className='info'>
-                <span className='size'>{this.props.sizes}</span>
-                <span className='material'>{this.props.materials}</span>
-            </div>
-            <div className='raiting'>
-                <div>
-                    <img src={star}/>
-                    <img src={star}/>
-                    <img src={star}/>
-                    <img src={star}/>
-                    <img src={star}/>
-                </div>
-                <span className='quantityRevios'>{this.props.quantitys} отзывов</span>
-            </div>
-            <hr/>
-               <div className='priceAndAnother'>
-                    <span className='price'>{this.props.prices}</span>
-                    <div className='favoritesAndComparison'>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-            </div> 
-            <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>   
-        </div>
-    </div>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
-          <div>
-          <KnifeLisa/>
-          </div>
+          </div>  
+          
+          ))}      
         </Slider>
       </div>
     );
@@ -150,6 +81,8 @@ const cssstyle = `
 
 .SliderCards{
   position:relative;
+  max-width:1590px;
+  margin-left:9%;
 }
 
 .SliderCards .slick-dots li{
@@ -183,4 +116,8 @@ const cssstyle = `
 background-color: #E8AA31;
         
 }
+
+
+
 `
+
