@@ -427,11 +427,7 @@ function Navigation() {
               </li>
             </ol>
           </div>
-          
         </nav>
-
-
-
         </div>
     )
 }
