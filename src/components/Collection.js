@@ -68,9 +68,13 @@ export const settings = {
   
 
 export const settingsBlock = {
+    autoplay:true,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow:3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    autoplaySpeed: 5000,
+    cssEase: 'ease-in-out',
+    pauseOnHover:false
 };

@@ -108,16 +108,23 @@ function Home() {
                 <a></a>
             </div>
             
-            <SliderCards
+            <div className='sliders_div'>
+                <SliderCards
             nameSlider='Хит продаж'
             toPage='Перейти в каталог'
             />
+            </div>
+            
             <SliderCards/>
             <SliderCards/>
             <SliderCards/>
             
 
-            <Block/> 
+            <Block
+            nameBlock='Новинки'
+            textBlock='Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.'
+            toPageBlock='Больше новинок'
+            /> 
         </div>
     )
 }

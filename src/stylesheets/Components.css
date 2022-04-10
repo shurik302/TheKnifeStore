@@ -518,7 +518,8 @@
     margin: 60px 0px 30px 0px;
 }
 
-.AllSlide .slick-dots{
+.AllSlide .slick-dots,
+.AllBlock .slick-dots{
     position: relative;
 }
 
@@ -529,7 +530,8 @@
     height: 10px;
 } */
 
-.AllSlide .slick-dots li.slick-active button:before {
+.AllSlide .slick-dots li.slick-active button:before,
+.AllBlock .slick-dots li.slick-active button:before{
     background-color: #E8AA31;
     border-radius: 50%;
     width: 10px;
@@ -563,6 +565,7 @@
 .AllSCard{
     width: 375px;
     height: 600px;
+    background-color: #FEFEFE;;
     box-shadow: 0px 0px 12px silver ;
     margin-top: 37px;
     margin-bottom: 61px;
@@ -614,6 +617,64 @@
 .favoritesAndComparison{
 
 }
+
+.AllBlock{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../images/backgroundForBlock.png');
+    background-size: cover;
+    width: 100%;
+    border: 1px solid red;
+    margin-top: 164px;
+    padding:18px 0px 45px 0px;
+}
+
+.settingsText{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 66px 0px 165px;
+    color: white;
+}
+
+.settingsText span:nth-child(1){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.settingsText span:nth-child(2){
+    display: block;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+}
+
+.settingsText a{
+    margin-top: 60px;
+    color: #E8AA31;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.settingsText a i{
+    margin-left: 10px;
+}
+
+.settingsSlider{
+    width: 74%;
+    z-index: 3;
+
+}
+
+
 /* 
     xxxl:1920px
     xxl: 1400px
