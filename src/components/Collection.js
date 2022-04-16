@@ -63,7 +63,32 @@ export const settings = {
     infinite: true,
     speed: 500,
     slidesToShow:4,
-    slidesToScroll: 4
+    slidesToScroll: 4,
+    responsive: [
+        {
+          breakpoint: 1660,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1260,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
   };
   
 
@@ -76,5 +101,31 @@ export const settingsBlock = {
     slidesToScroll: 3,
     autoplaySpeed: 5000,
     cssEase: 'ease-in-out',
-    pauseOnHover:false
+    pauseOnHover:false,
+    responsive: [
+        {
+          breakpoint: 1530,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1260,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    
 };

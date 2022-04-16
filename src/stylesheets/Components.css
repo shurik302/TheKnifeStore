@@ -31,6 +31,7 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .UlBurger{
@@ -62,10 +63,13 @@
 .searchLine{
     position: relative;
     margin-left: 8%;
+    width: 18%;
+    border: 1px solid green;
 } 
 
 .searchLine form input{
-    width: 350px;
+    width: 100%;
+    /* width: 350; */
     height: 41px;
     padding-left: 46px;
     outline: none;
@@ -96,6 +100,7 @@
 
 .locationHead a span{
     margin-left:10px;
+    font-weight: 600;
 }
 
 .locationHead a {
@@ -114,11 +119,13 @@
 }
 .telHead span{
     font-size: 18px;
+    font-weight: 600;
 }
 
 .telHead a span{
     color: #E8AA31;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .fa-chevron-down{
@@ -146,7 +153,8 @@
 }
 
 .moneyHead span{
-    font-size: 16px;    
+    font-size: 16px; 
+    font-weight: 500;   
 }
 
 .moneyHead a {
@@ -156,7 +164,7 @@
 .moneyHead a span{
     font-size: 16px;   
     color: #E8AA31;
-    
+    font-weight: 500; 
 }
 
 .catalogeHead{
@@ -189,7 +197,7 @@
     background-color: black;
     position: absolute;
     left: 0;
-    visibility: hidden;
+    visibility: hidden; /* ТУТ МЕНЯЕТСЯ ВИДИМОСТЬ ВЫПАДАЮЩЕГО МЕНЮ */
     margin-top: 24px;
     
 }
@@ -203,10 +211,9 @@
 .catalogeHeadOlLight:hover:after,
 .catalogeHeadOlSoputTov:hover:after{
     content: '';
-    border-bottom: 4px solid#E8AA31;
+    border-bottom: 4px solid #E8AA31;
     position: absolute;
     top: 66px;
-    
 }
 
 .catalogeHeadOlKnife:hover:after{
@@ -272,6 +279,7 @@
 .TopCatalogeHeadDownOl li{
     font-size: 16px;
     letter-spacing: 0.6px;
+    font-weight: 500; 
 }
 
 
@@ -343,128 +351,28 @@
 
 .showallCatKnife li{
     font-size: 16px;
-}
-
-@media (max-width:1600px) {
-    .locationHead{
-        margin-left: 4%;
-    }
-
-    .searchLine{
-        margin-left: 4%;
-    }
-
-    .loubarHead{
-        padding: 0 4% 0 4%;
-    }
+    font-weight: 500; 
+    color: #E8AA31;
 }
 
 
-@media (max-width:1400px) {
-    .locationHead,
-    .searchLine{
-        margin-left: 1%;
-    }
-    .loubarHead{
-        padding: 0 2% 0 2%;
-    }
-    .navUlHome{
-        margin-left: 80px;
-    }
-    .navUlPerson{
-        position: absolute;
-        right: 140px;
-        
-    }
-    .navUl li a{
-        font-size: 16px;
-    }
-    .navUl{
-        gap: 40px;
-    }
-    
-}
-
-@media (max-width:1200px) {
-
-}
-
-@media (max-width:992px) {
-    .navUlHome{
-        margin-left: 20px;
-    }
-    .navUlPerson{
-        position: absolute;
-        right: 20px;
-    }
-    .navUl li a{
-        font-size: 12px;
-    }
-    .navUl{
-        gap: 30px;
-        height: 60px;
-    }
-}
-
-@media (max-width:576px) {
-    .navUl{
-        gap: 20px;
-    }
-}
-
-@media (max-width:430px) {
-    .navUlHome{
-        margin-left: 9px;
-    }
-    .navUlPerson{
-        position: absolute;
-        right: 8px;
-    }
-    .navUl{
-        gap: 8px;
-    }
-    .navUl li a{
-        font-size: 11px;
-    }
-    .uCab{
-        display: none;
-    }
-    .fa-user-alt{
-        margin-right: 15px;
-    }
-}
-
-@media (max-width:320px) {
-    .UlBurger{
-        display: block;
-    }
-    .navUl{
-        flex-direction: column;
-        height: 100%;
-        position: fixed;
-    }
-    .navUlPerson{
-        flex-direction: column;
-        position: relative;
-    }
-
-}
 
 /*slider*/
 
 
 .AllSlide{
-    margin-left: 92px;
-    height:338px;
+    margin-left: 96px;
+    height:300px;
     /* width:900px; */
-    width: 46%;
-    padding: 45px 32px 0px 70px;
+    width: 56%;
+    padding: 37px 32px 0px 57px;
     z-index: 10;
     color: white;
 }
 
 .firstDivSlide{
     padding-left: 10px;
+    /* border: 1px solid green; */
 }
 
 
@@ -474,37 +382,35 @@
 
 .title,
 .titleBott{
-    font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
-    letter-spacing: 0.03em;
     font-size: 36px;
-    line-height: 46px;
-/*     margin-left: 70px; */
-    font-weight: 900;
+    letter-spacing: 0.03em;
 }
 .title{
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .titleBott{
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
+    font-weight: 500;
 }
 
 .allDescription{
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 20px;
     line-height: 30px;
+    font-weight: 500;
 }
 
 .TitleButton{
     display: block;
     width: 228px;
     height: 50px;
-    left: 69px;
-    top: 333px;
+    /* left: 69px; */
+    /* top: 333px; */
     color: white;
     background-color:#E8AA31;
     display: flex;
@@ -515,20 +421,13 @@
     line-height: 46px;
     border-radius: 3px;
     box-shadow:0px 0px 10px #E8AA31 ;
-    margin: 60px 0px 30px 0px;
+    margin: 65px 0px 30px 0px;
 }
 
 .AllSlide .slick-dots,
 .AllBlock .slick-dots{
     position: relative;
 }
-
-/* .AllSlide .slick-dots .slick-active{
-    background-color: #E8AA31;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-} */
 
 .AllSlide .slick-dots li.slick-active button:before,
 .AllBlock .slick-dots li.slick-active button:before{
@@ -565,12 +464,11 @@
 .AllSCard{
     width: 375px;
     height: 600px;
-    background-color: #FEFEFE;;
+    /* background-color: #FEFEFE; */
     box-shadow: 0px 0px 12px silver ;
     margin-top: 37px;
     margin-bottom: 61px;
     margin-left: 12px;
-    /* border: 1px solid red; */
 }
 
 .divInImg{
@@ -635,6 +533,7 @@
     flex-direction: column;
     padding: 30px 66px 0px 165px;
     color: white;
+
 }
 
 .settingsText span:nth-child(1){
@@ -671,7 +570,6 @@
 .settingsSlider{
     width: 74%;
     z-index: 3;
-
 }
 
 
@@ -705,3 +603,185 @@
 }
 
 /* END SLIDER IN HOME */
+
+.AllNews{
+    margin-top: 120px;
+    border: 2px solid green;
+    padding: 0px 165px 0px 165px;
+}
+.nameState{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.MainContent{
+    margin-top: 18px;
+}
+
+.textPart{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    width: 376px;
+    padding: 0px 26px 0px 32px;
+}
+
+.textPart span:nth-child(1){
+    font-weight: 600;
+    margin-top: 17px;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.textPart span:nth-child(2){
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.newsImage{
+    width: 376px;
+    height: 200px;
+}
+
+.newsImage img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* МЕДИА ЗАПРОСЫ */
+
+/* @media (max-width:1800px) {
+    .settingsText{
+        padding: 20px 66px 0px 100px;
+    }
+}
+
+@media (max-width:1630px) {
+    .settingsText{
+        padding: 20px 66px 0px 80px;
+    }
+} */
+
+@media (max-width:1600px) {
+    .locationHead{
+        margin-left: 4%;
+    }
+
+    .searchLine{
+        margin-left: 4%;
+    }
+
+    .loubarHead{
+        padding: 0 4% 0 4%;
+    }
+}
+
+@media (max-width:1530px) {
+    .settingsText{
+        /* padding: 30px 20px 0px 20px; */
+        width: 40%;
+    }
+    .settingsSlider{
+        width: 60%;
+    }
+}
+
+@media (max-width:1400px) {
+    .locationHead,
+    .searchLine{
+        margin-left: 1%;
+    }
+    .loubarHead{
+        padding: 0 2% 0 2%;
+    }
+    .navUlHome{
+        margin-left: 80px;
+    }
+    .navUlPerson{
+        position: absolute;
+        right: 140px;
+        
+    }
+    .navUl li a{
+        font-size: 16px;
+    }
+    .navUl{
+        gap: 40px;
+    }
+    
+}
+
+@media (max-width:1260px) {
+    .settingsText{
+        width: 50%;
+    }
+    .settingsSlider{
+        width: 50%;
+    }
+}
+
+@media (max-width:992px) {
+    .navUlHome{
+        margin-left: 20px;
+    }
+    .navUlPerson{
+        position: absolute;
+        right: 20px;
+    }
+    .navUl li a{
+        font-size: 12px;
+    }
+    .navUl{
+        gap: 30px;
+        height: 60px;
+    }
+}
+
+@media (max-width:576px) {
+    .navUl{
+        gap: 20px;
+    }
+}
+
+@media (max-width:430px) {
+    .navUlHome{
+        margin-left: 9px;
+    }
+    .navUlPerson{
+        position: absolute;
+        right: 8px;
+    }
+    .navUl{
+        gap: 8px;
+    }
+    .navUl li a{
+        font-size: 11px;
+    }
+    .uCab{
+        display: none;
+        font-weight: 600;
+    }
+    .fa-user-alt{
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    .UlBurger{
+        display: block;
+    }
+    .navUl{
+        flex-direction: column;
+        height: 100%;
+        position: fixed;
+    }
+    .navUlPerson{
+        flex-direction: column;
+        position: relative;
+    }
+
+}

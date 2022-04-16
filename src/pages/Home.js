@@ -10,6 +10,7 @@ import fCat from '../images/fCat.png';
 import sCat from '../images/sCat.png';
 import SliderCards from '../components/SliderCards'
 import Block from '../components/Block';
+import OursArticles from '../components/OursArticles';
 
 
 
@@ -125,6 +126,10 @@ function Home() {
             textBlock='Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.'
             toPageBlock='Больше новинок'
             /> 
+            <OursArticles
+            name='Наши статьи'
+            nameState='Всё о ножах: как правильно выбрать'
+            dataState='24.07.2019'/>
         </div>
     )
 }
