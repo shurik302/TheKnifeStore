@@ -3,17 +3,22 @@
 }
 
 .allTitle{
-    height: 788px;
+    /* height: 788px; */
     width: 100%;
-    background-image: url(../images/background-image_title.png);
+    
     display: flex;
     flex-direction: column;
 }
 .slider{
+    /* height: 788px; */
     position: relative;
     display: flex;
     flex-direction: row;
     
+}
+
+.upanddownSlider{
+    background-image: url(../images/background-image_title.png);
 }
 
 .knifeTitle{
@@ -44,7 +49,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 270px;
-    padding: 0px 160px 0px 160px;
+    padding: 0px 160px 54px 160px;
     justify-content: space-between;
 }
 

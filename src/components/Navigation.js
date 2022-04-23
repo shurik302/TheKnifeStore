@@ -34,7 +34,7 @@ function Navigation() {
             <div className='searchLine'>
               <form>
                 <input type='search' placeholder='поиск'/>
-                <i class="fas fa-search"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
               </form>
             </div>
             <div className='locationHead'>
@@ -55,7 +55,7 @@ function Navigation() {
           </div>
           <div className='catalogeHead'>
             <ol className='catalogeHeadOl'>
-              <li className='catalogeHeadOlKnife '><a href='#'>Каталог ножей</a>
+              <li className='catalogeHeadOlKnife classForLine'><a href='#'>Каталог ножей</a>
                 <div className='catalogeHeadDown'>
                   <div className='TopCatalogeHeadDown'>
                     <ol className='TopCatalogeHeadDownOl leftSpacing'>
@@ -129,7 +129,7 @@ function Navigation() {
                   </div>
                 </div>
               </li>
-              <li className='catalogeHeadOlKLinkKnife'><a href='#'>Клинковое оружие</a>
+              <li className='catalogeHeadOlKLinkKnife classForLine'><a href='#'>Клинковое оружие</a>
                 <div className='catalogeHeadDown'>
                     <div className='TopCatalogeHeadDown'>
                       <ol className='TopCatalogeHeadDownOl leftSpacing'>
@@ -203,7 +203,7 @@ function Navigation() {
                     </div>
                   </div>
               </li>
-              <li className='catalogeHeadOlSuvenir'><a href='#'>Сувенирные изделия</a>
+              <li className='catalogeHeadOlSuvenir classForLine'><a href='#'>Сувенирные изделия</a>
                 <div className='catalogeHeadDown'>
                     <div className='TopCatalogeHeadDown'>
                       <ol className='TopCatalogeHeadDownOl leftSpacing'>
@@ -277,7 +277,7 @@ function Navigation() {
                     </div>
                   </div>
               </li>
-              <li className='catalogeHeadOlLight'><a href='#'>Фонари ARMYTEK</a>
+              <li className='catalogeHeadOlLight classForLine'><a href='#'>Фонари ARMYTEK</a>
                 <div className='catalogeHeadDown'>
                   <div className='TopCatalogeHeadDown'>
                     <ol className='TopCatalogeHeadDownOl leftSpacing'>
@@ -351,7 +351,7 @@ function Navigation() {
                   </div>
                 </div>
               </li>
-              <li className='catalogeHeadOlSoputTov'><a href='#'>Сопутствующие товары</a>
+              <li className='catalogeHeadOlSoputTov classForLine'><a href='#'>Сопутствующие товары</a>
                 <div className='catalogeHeadDown'>
                   <div className='TopCatalogeHeadDown'>
                     <ol className='TopCatalogeHeadDownOl leftSpacing'>

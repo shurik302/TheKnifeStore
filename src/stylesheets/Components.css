@@ -64,7 +64,7 @@
     position: relative;
     margin-left: 8%;
     width: 18%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 } 
 
 .searchLine form input{
@@ -80,7 +80,7 @@
     font-size: 16px;
 }
 
-.fa-search{
+.fa-magnifying-glass{
     position: absolute;
     left: 0;
     top: 10px;
@@ -171,7 +171,8 @@
     height: 70px;
     background-color: #141414;
     color: white;
-    padding-left: 140px;
+    width: 100%;
+    padding: 0 181px 0 181px;
     display: flex;
     align-items: center;
     position: relative;
@@ -182,12 +183,14 @@
     flex-direction: row;
     list-style-type: none;
     gap: 116px;
-    
+    padding-left:0 ;
 }
+
 .catalogeHeadOl li{
     letter-spacing: 0.3px;
     font-size: 18px;
     padding:24px 0px 24px 0px;
+    /* border: 1px solid red; */
 }
 
 
@@ -202,49 +205,19 @@
     
 }
 
-.catalogeHeadOl li:hover>a{
-    color: #E8AA31;
-}
-.catalogeHeadOlKnife:hover:after,
-.catalogeHeadOlKLinkKnife:hover:after,
-.catalogeHeadOlSuvenir:hover:after,
-.catalogeHeadOlLight:hover:after,
-.catalogeHeadOlSoputTov:hover:after{
-    content: '';
-    border-bottom: 4px solid #E8AA31;
-    position: absolute;
-    top: 66px;
+.catalogeHeadOl .classForLine:hover>a{
+    border-bottom: 2px solid #E8AA31;
+    padding-bottom: 22px ;
 }
 
-.catalogeHeadOlKnife:hover:after{
-    left: 181px;
-    width: 139px;
-}
-
-.catalogeHeadOlKLinkKnife:hover:after{
-    left: 436px;
-    width: 179px;
-}
-
-.catalogeHeadOlSuvenir:hover:after{
-    left: 730px;
-    width: 203px;
-}
-
-.catalogeHeadOlLight:hover:after{
-    left: 1048px;
-    width: 170px;
-}
-
-.catalogeHeadOlSoputTov:hover:after{
-    left: 1335px;
-    width: 220px;
+.catalogeHeadOl .classForLine{
+/*     flex: 1 1 auto;
+    margin: 0 10%; */
 }
 
 .catalogeHeadOl li:hover>.catalogeHeadDown{
     visibility: visible;
 }
-
 
 .linet,
 .lineb{
@@ -279,7 +252,7 @@
 .TopCatalogeHeadDownOl li{
     font-size: 16px;
     letter-spacing: 0.6px;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 
@@ -322,15 +295,12 @@
     margin-left: 102px;
 }
 
-
-
 .showallCatKnife{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 12px;
     height: 80px;
-    
 }
 
 .showallCatKnife li:nth-child(2){
@@ -372,9 +342,7 @@
 
 .firstDivSlide{
     padding-left: 10px;
-    /* border: 1px solid green; */
 }
-
 
 .descriptionSlider{
     font-weight:900;
