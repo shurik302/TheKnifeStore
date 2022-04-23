@@ -1,3 +1,7 @@
+.leftSpacing{
+    margin-left: 9%;
+  }
+
 .navigHead{
     font-size: 22px;
     z-index: 5;
@@ -172,25 +176,29 @@
     background-color: #141414;
     color: white;
     width: 100%;
-    padding: 0 181px 0 181px;
+    padding: 0 9% 0 9%;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 998;
+
 }
 .catalogeHeadOl{
+    width: 100%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 116px;
+    /* gap: 116px; */
     padding-left:0 ;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
 }
 
 .catalogeHeadOl li{
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
     font-size: 18px;
     padding:24px 0px 24px 0px;
-    /* border: 1px solid red; */
 }
 
 
@@ -200,7 +208,7 @@
     background-color: black;
     position: absolute;
     left: 0;
-    visibility: hidden; /* ТУТ МЕНЯЕТСЯ ВИДИМОСТЬ ВЫПАДАЮЩЕГО МЕНЮ */
+    visibility: visible; /* ТУТ МЕНЯЕТСЯ ВИДИМОСТЬ ВЫПАДАЮЩЕГО МЕНЮ */
     margin-top: 24px;
     
 }
@@ -210,7 +218,7 @@
     padding-bottom: 22px ;
 }
 
-.catalogeHeadOl .classForLine{
+.catalogeHeadOl .classForLine a{
 /*     flex: 1 1 auto;
     margin: 0 10%; */
 }
@@ -221,16 +229,16 @@
 
 .linet,
 .lineb{
-    width: 72%;
+    /* width: 72%; */
     border-color: rgba(255, 255, 255, 0.3);
     height: 0px;
 }
 .linet{
-    margin: 0px 0px 6px 180px ;
+    margin: 0px 9% 6px 9% ;
 }
 
 .lineb{
-    margin: 25px 0px 0px 180px ;
+    margin: 25px 9% 0px 9% ;
 }
 
 .CenterDown{
@@ -247,12 +255,14 @@
     font-size: 16px;
     font-weight: bold;
     height: 80px;
+    padding: 0;
 }
 
 .TopCatalogeHeadDownOl li{
     font-size: 16px;
     letter-spacing: 0.6px;
     font-weight: 500;
+
 }
 
 
@@ -268,7 +278,6 @@
 
 .DownOl li{
     padding:20px 0px 0px 0px;
-    /* border: 1px solid red; */
 }
 
 .DownOl li a{
@@ -276,23 +285,27 @@
 }
 
 .DownOlf{
-    margin-left: 180px;
+    margin-left: 9%; 
 }
 
 .DownOls{
-    margin-left: 29px;
+    /* margin-left: 29px; */
+    margin-left: 1%;
 }
 
 .DownOt{
-    margin-left: 84px;
+    /* margin-left: 84px; */
+    margin-left: 4%;
 }
 
 .DownOlfourth{
-    margin-left: 71px;
+    /* margin-left: 71px; */
+    margin-left: 3%;
 }
 
 .DownOlfifth{
-    margin-left: 102px;
+    margin-left: 5%;
+    margin-right: 9%;
 }
 
 .showallCatKnife{
@@ -301,6 +314,7 @@
     align-items: center;
     margin-left: 12px;
     height: 80px;
+    padding: 0px;
 }
 
 .showallCatKnife li:nth-child(2){
@@ -622,17 +636,14 @@
 
 /* МЕДИА ЗАПРОСЫ */
 
-/* @media (max-width:1800px) {
-    .settingsText{
-        padding: 20px 66px 0px 100px;
+@media (max-width:1800px) {
+    .DownOlfifth{
+        margin-right: 7%;
+    }
+    .DownOlf{
+        margin-left: 7%;
     }
 }
-
-@media (max-width:1630px) {
-    .settingsText{
-        padding: 20px 66px 0px 80px;
-    }
-} */
 
 @media (max-width:1600px) {
     .locationHead{
@@ -655,6 +666,9 @@
     }
     .settingsSlider{
         width: 60%;
+    }
+    .catalogeHeadOl li{
+        font-size: 16px;
     }
 }
 
@@ -690,6 +704,9 @@
     .settingsSlider{
         width: 50%;
     }
+    .catalogeHeadOl li{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:992px) {
@@ -706,6 +723,12 @@
     .navUl{
         gap: 30px;
         height: 60px;
+    }
+    .catalogeHeadOl li{
+        font-size: 12px;
+    }
+    .catalogeHead{
+        padding: 0 4% 0 4%;
     }
 }
 
@@ -753,3 +776,4 @@
     }
 
 }
+

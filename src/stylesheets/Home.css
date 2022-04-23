@@ -1,3 +1,7 @@
+.leftSpacing{
+    margin-left: 9%;
+  }
+
 .slick-slider{
     z-index:-1;
 }
@@ -196,3 +200,4 @@
         gap: 33px 30px;
     }
 }
+

@@ -1,5 +1,9 @@
 /* ПОТОМ ПЕРЕНЕСТИ В Components.css */
 
+.leftSpacing{
+    margin-left: 9%;
+  }
+
 .divwithImage{
     height: 80vh;
     width: 100%;
@@ -64,3 +68,4 @@
 .MainPart{
 
 }
+
