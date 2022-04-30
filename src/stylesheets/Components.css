@@ -1,6 +1,7 @@
 .leftSpacing{
-    margin-left: 9%;
-  }
+    margin-left:180px;
+    /* margin-right: 300px; */
+}
 
 .navigHead{
     font-size: 22px;
@@ -192,7 +193,6 @@
     padding-left:0 ;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .catalogeHeadOl li{
@@ -227,32 +227,44 @@
     visibility: visible;
 }
 
-.linet,
-.lineb{
-    /* width: 72%; */
+.linetop{
     border-color: rgba(255, 255, 255, 0.3);
-    height: 0px;
-}
-.linet{
-    margin: 0px 9% 6px 9% ;
+    height: 2px;
+    position: absolute;
+    width: 90%;
+    margin: 0px 0% 0px 0% ;
+    left: 5%;
+    top: 80px;
 }
 
 .lineb{
-    margin: 25px 9% 0px 9% ;
+    border-color: rgba(255, 255, 255, 0.3);
+    height: 0px;
+}
+
+.lineb{
+    margin: 25px 5% 0px 5% ;
 }
 
 .CenterDown{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.CenterDown ol{
+    /* flex:1 1 auto; */
+    /* margin: 0 0px; */
+    padding: 0;
 }
 
 .TopCatalogeHeadDownOl{
     display: flex;
     flex-direction: row;
     color: white;
-    align-items: center;
-    gap: 95px;
-    font-size: 16px;
+    /* align-items: center; */
+    /* gap: 95px; */
+    /* font-size: 16px; */
     font-weight: bold;
     height: 80px;
     padding: 0;
@@ -262,7 +274,8 @@
     font-size: 16px;
     letter-spacing: 0.6px;
     font-weight: 500;
-
+    /* flex: 1 1 auto; */
+    /* margin: 0 0px; */
 }
 
 
@@ -274,18 +287,24 @@
     line-height: 20px;
     padding-inline-start: 0px;
     color: white;
+    margin-top: 10px;
+}
+
+.DownOl li:nth-child(1){
+    margin-bottom: 43px;
 }
 
 .DownOl li{
     padding:20px 0px 0px 0px;
 }
 
+
 .DownOl li a{
     font-size: 16px;
 }
 
 .DownOlf{
-    margin-left: 9%; 
+    /* margin-left: 9%; */ 
 }
 
 .DownOls{
@@ -305,7 +324,6 @@
 
 .DownOlfifth{
     margin-left: 5%;
-    margin-right: 9%;
 }
 
 .showallCatKnife{
@@ -340,9 +358,7 @@
 }
 
 
-
 /*slider*/
-
 
 .AllSlide{
     margin-left: 96px;
@@ -636,13 +652,26 @@
 
 /* МЕДИА ЗАПРОСЫ */
 
-@media (max-width:1800px) {
+
+
+@media (max-width:1853px) {
+    .CenterDown{
+        gap: 0;
+    }
+    .leftSpacing{
+        margin-left:100px;
+        /* margin-right: 300px; */
+    }
     .DownOlfifth{
+        margin-right: 0;
+    }
+
+    /* .DownOlfifth{
         margin-right: 7%;
     }
     .DownOlf{
         margin-left: 7%;
-    }
+    } */
 }
 
 @media (max-width:1600px) {
@@ -668,7 +697,13 @@
         width: 60%;
     }
     .catalogeHeadOl li{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .leftSpacing{
+        margin-right: 5%;
+    }
+    .DownOl li a {
+        font-size: 14px;
     }
 }
 
@@ -686,7 +721,6 @@
     .navUlPerson{
         position: absolute;
         right: 140px;
-        
     }
     .navUl li a{
         font-size: 16px;
@@ -694,7 +728,18 @@
     .navUl{
         gap: 40px;
     }
-    
+    .showallCatKnife li:nth-child(2),
+    .showallCatKnife li:nth-child(3),
+    .showallCatKnife li:nth-child(4){
+        margin-left: 10%;
+    }
+    .showallCatKnife li:nth-child(5){
+        margin-left: 18%;
+    }
+    .leftSpacing{
+        margin-left: 50px;
+        margin-right: 3%;
+    }
 }
 
 @media (max-width:1260px) {
@@ -705,11 +750,25 @@
         width: 50%;
     }
     .catalogeHeadOl li{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .DownOl li a {
+        font-size: 12px;
+    }
+    .leftSpacing{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .DownOlfifth{
+        margin-left: 2%;
     }
 }
 
 @media (max-width:992px) {
+    .catalogeHeadOl{
+        /* visibility: hidden; */
+        flex-direction: column;
+    }
     .navUlHome{
         margin-left: 20px;
     }
