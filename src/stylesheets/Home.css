@@ -1,44 +1,28 @@
-/* .leftSpacing{
-    margin-left: 9%;
-  } */
-
 .slick-slider{
     z-index:-1;
 }
-
 .allTitle{
-    /* height: 788px; */
     width: 100%;
-    
     display: flex;
     flex-direction: column;
 }
 .slider{
-    /* height: 788px; */
     position: relative;
     display: flex;
     flex-direction: row;
-    
 }
-
 .upanddownSlider{
     background-image: url(../images/background-image_title.png);
 }
-
 .knifeTitle{
     margin-top: 35px;
-    /* margin-right: 260px; */
 }
-
 .knifeTitle img{
     position: absolute;
     z-index: 9;
     right: 14%;
-    
 }
-
 .circle{
-    /* margin-right: 126px; */
     position: absolute;
     width: 420px;
     height: 420px;
@@ -48,7 +32,6 @@
     top: 90px;
     z-index: 1;
 }
-
 .bottomTitle{
     display: flex;
     flex-direction: row;
@@ -56,12 +39,10 @@
     padding: 0px 160px 54px 160px;
     justify-content: space-between;
 }
-
 .bottomTitle div{
     display: flex;
     flex-direction: column;
 }
-
 .bottomTitle div span{
     color: white;
     font-style: normal;
@@ -70,58 +51,45 @@
     line-height: 32px;
     text-align: center;
 }
-
 .verifyTitle div{
     height: 64px;
     width: 247px;
 }
-
 .verifyTitle div img{
     height: 100%;
     width: 64px;
 }
-
 .transportTitle div{
     width: 255px;
     height: 60px;
 }
-
 .transportTitle div img{
     height: 100%;
     width: 90px;
 }
-
 .settingsTitle div{
     width: 274px;
     height: 77px;
 }
-
 .settingsTitle div img{
     height: 100%;
     width: 74px;
 }
-
 .procentsTitle div{
     width: 211px;
     height: 66px;
     text-align: center;
 }
-
 .procentsTitle div img{
     height: 100%;
     width: 67px;
-
 }
-
 .verifyTitle div img,
 .transportTitle div img,
 .settingsTitle div img,
 .procentsTitle div img{
-    /* display: flex;
-    justify-content: center; */
     margin: 0 auto;
 }
-
 .AllCategories{
     margin: auto;
     margin-top: 140px;
@@ -129,9 +97,6 @@
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 33px 30px;
 }
-
-
-
 .categorie{
     width: 509px;
     height: 293px;
@@ -139,16 +104,13 @@
     position: relative;
     overflow: hidden;
 }
-
 .categorie span{
     display: block;
     font-size: 23px;
     margin-top: 27px;
     margin-left: 32px;
 }
-
 .categorie hr{
-    /* 68*2 */
     width: 68px;
     height: 2px; 
     border: none; 
@@ -156,42 +118,28 @@
     color: #E8AA31;  /*  - так нужно */
     margin-left: 30px;
     margin-top: 21px;
-    
 }
-
 .categorie ul{
     list-style-type:disc ;
     color: #E8AA31;
     margin-top: 40px;
 }
-
 .categorie ul li span{
     color: black;
     font-size: 13px;
     margin: 30px 0px 0px 0px;
 }
-
 .FCat img{
-    /* 61*276 */
     height: 276px;
     position: absolute;
     top:30px;
     left: 262px;
 }
-
 .SCat img{
-    /* 83*270 */
     position: absolute;
     top:0px;
     left: 0px;
-
 }
-
-.sliders_div{
-}
-
-
-
 @media (max-width:1600px) {
     .AllCategories{
         margin-top: 100px;
@@ -200,4 +148,3 @@
         gap: 33px 30px;
     }
 }
-
