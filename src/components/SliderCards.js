@@ -81,8 +81,10 @@ const cssstyle = `
 
 .SliderCards{
   position:relative;
-  max-width:1590px;
-  margin-left:9%;
+  max-width:84%;
+  margin:auto;
+  /* margin-left:7%;
+  margin-right:7%; */
 }
 
 .SliderCards .slick-dots li{

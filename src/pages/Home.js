@@ -11,6 +11,7 @@ import sCat from '../images/sCat.png';
 import SliderCards from '../components/SliderCards'
 import Block from '../components/Block';
 import OursArticles from '../components/OursArticles';
+import '../stylesheets/Components.css';
 
 
 
@@ -26,21 +27,26 @@ function Home() {
                     <div className='circle'></div>
                 </div>
                 <div className='bottomTitle'>
-                    <div className='verifyTitle'>
-                        <div><img src={verify}/></div>
-                        <span>Гарантия 100% возврата <br/>денежных средств</span>
+                    <div>
+                        <div className='verifyTitle'>
+                            <div><img src={verify}/></div>
+                            <span>Гарантия 100% возврата <br/>денежных средств</span>
+                        </div>
+                        <div className='transportTitle'>
+                            <div><img src={transport}/></div>
+                            <span>Доставка по Украине, <br/>Казахстану и Белоруссии</span>
+                        </div>
                     </div>
-                    <div className='transportTitle'>
-                        <div><img src={transport}/></div>
-                        <span>Доставка по Украине, <br/>Казахстану и Белоруссии</span>
-                    </div>
-                    <div className='settingsTitle'>
-                        <div><img src={settings}/></div>
-                        <span>Возможность оформление <br/>заказа без регистрации.</span>
-                    </div>
-                    <div className='procentsTitle'>
-                        <div><img src={procents}/></div>
-                        <span>Скидки постоянным <br/>покупателям. </span>
+
+                    <div>
+                        <div className='settingsTitle'>
+                            <div><img src={settings}/></div>
+                            <span>Возможность оформление <br/>заказа без регистрации.</span>
+                        </div>
+                        <div className='procentsTitle'>
+                            <div><img src={procents}/></div>
+                            <span>Скидки постоянным <br/>покупателям. </span>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,35 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import '../stylesheets/Components.css';
-import imgLogo from '../images/icon.png'
+import imgLogo from '../images/icon.png';
+import imgLogoW from '../images/iconW.png';
 
 function Navigation() {
     return (
         <div className='navigHead'>
             <nav>
+              <div className='buttonM'>
+                <div>
+                  <div className='firstDivM DivM'></div>
+                  <div className='secondDivM DivM'></div>
+                  <div className='thirdDivM DivM'></div>
+                </div>
+                
+              </div>
+              <div className='mobileNav'>
+                
+                <div className='LogoM'>
+                  <Link to="/">
+                    <img src={imgLogo}/>
+                  </Link>
+                </div>
+                <div className='navUlPersonM'>
+                  <Link to="/personal_cabinet">
+                    <i class="fas fa-user-alt"></i>
+                  </Link>
+                </div> 
+              </div>
+
           <ul className='navUl'>
             <li className='navUlHome'>
               <Link to="/">Главная</Link>
@@ -28,9 +51,14 @@ function Navigation() {
             </li>
           </ul>
           <div className='loubarHead'>
-            <div className='imgHead'>
-              <Link to="/"><img src={imgLogo}/></Link>
-            </div>
+            
+              <Link to="/">
+                <div className='imgHead'>
+                  <img src={imgLogo}/>
+                  <img src={imgLogoW}/>
+                </div>
+              </Link>
+            
             <div className='searchLine'>
               <form>
                 <input type='search' placeholder='поиск'/>

@@ -37,11 +37,19 @@
     flex-direction: row;
     margin-top: 270px;
     padding: 0px 160px 54px 160px;
-    justify-content: space-between;
+    justify-content: center;    
+    gap: 180px;
 }
 .bottomTitle div{
     display: flex;
+    flex-direction: row;
+    gap: 180px;
+    justify-content: center;
+}
+.bottomTitle div div{
+    display: flex;
     flex-direction: column;
+    gap: 0;
 }
 .bottomTitle div span{
     color: white;
@@ -91,15 +99,19 @@
     margin: 0 auto;
 }
 .AllCategories{
+    width: 100%;
     margin: auto;
     margin-top: 140px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 33px 30px;
+    padding:0 9% 0 9% ;
 }
 .categorie{
-    width: 509px;
-    height: 293px;
+    /* width: 509px;
+    height: 293px; */
+    width: 100%;
+    height: 100%;
     box-shadow:0px 0px 10px grey ;
     position: relative;
     overflow: hidden;
@@ -146,5 +158,84 @@
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         gap: 33px 30px;
+    }
+    .bottomTitle{
+        gap: 18px;
+    }
+    .bottomTitle div{
+        gap: 18px;
+    }
+}
+
+@media (max-width:1230px){
+    /* .categorie{
+        width: 400px;
+        height: 230px;
+    } */
+    .circle{
+        right: 0;
+    }
+    .knifeTitle img{
+        right: 0;
+    }
+    .bottomTitle div span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:992px) {
+    .knifeTitle img{
+        right: 3%;
+        width: 300px;
+        height: 328px;
+    }
+    .bottomTitle{
+        flex-direction: column;
+        margin-top: 200px;
+        padding-bottom: 0;
+    }
+}
+@media (max-width:860px) {
+    .AllCategories{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    /* .categorie{
+        width: 600px;
+        height: 345px;
+    } */
+}
+@media (max-width:630px) {
+    .upanddownSlider{
+        background-image: url(../images/background_bigWid.png);
+        background-repeat:no-repeat ;
+    }
+    .knifeTitle img{
+        right: 0;
+        width: 240px;
+        height: 260px;
+    }
+    .titleBott{
+        margin-top: 10px;
+    }
+    .allDescription {
+        margin-top: 0;
+    }
+    .bottomTitle{
+        margin-top:280px ;
+        padding: 0;
+    }
+    .bottomTitle div {
+        flex-direction: column;
+    }
+    .bottomTitle div div{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:530px) {
+    .knifeTitle img{
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

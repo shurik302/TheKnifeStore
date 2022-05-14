@@ -12,7 +12,16 @@ export default class SimpleSlider extends Component {
       autoplay:true,
       autoplaySpeed: 5000,
       cssEase: 'ease-in-out',
-      pauseOnHover:false
+      pauseOnHover:false,
+      responsive: [
+        {
+          breakpoint: 530,
+          settings: {
+            autoplay:false,
+            dots: false,
+          }
+        }
+        ]
     };
     return (
       <div className="AllSlide">
