@@ -1,23 +1,29 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link} from "react-router-dom";
 import '../stylesheets/Components.css';
 import imgLogo from '../images/icon.png';
 import imgLogoW from '../images/iconW.png';
+import MobileMenu from '../components/MobileMenu';
 
 function Navigation() {
+  const [Menu, setMenu] = useState(true);
     return (
         <div className='navigHead'>
             <nav>
-              <div className='buttonM'>
+              <div className='buttonM'onclick="myFunction()" onClick={() => setMenu(!Menu)}>
                 <div>
                   <div className='firstDivM DivM'></div>
                   <div className='secondDivM DivM'></div>
                   <div className='thirdDivM DivM'></div>
                 </div>
-                
               </div>
+              {/* Кнопка сверху, которая вызывает меню с 992 пикселей, под ней стоит див с этой меню */}
+
+              <div className={Menu? 'menuClose':'menuEscape'}>
+                <MobileMenu/>
+              </div>
+
               <div className='mobileNav'>
-                
                 <div className='LogoM'>
                   <Link to="/">
                     <img src={imgLogo}/>
@@ -58,7 +64,9 @@ function Navigation() {
                   <img src={imgLogoW}/>
                 </div>
               </Link>
-            
+              <div className='MCabinet'>
+                <Link to="/"><i class="fas fa-user-alt"></i></Link>
+              </div>
             <div className='searchLine'>
               <form>
                 <input type='search' placeholder='поиск'/>

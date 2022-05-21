@@ -163,7 +163,7 @@
         gap: 18px;
     }
     .bottomTitle div{
-        gap: 18px;
+        gap: 40px;
     }
 }
 
@@ -221,7 +221,7 @@
         margin-top: 0;
     }
     .bottomTitle{
-        margin-top:280px ;
+        margin-top:200px ;
         padding: 0;
     }
     .bottomTitle div {
@@ -233,6 +233,9 @@
     }
 }
 @media (max-width:530px) {
+    .bottomTitle{
+        margin-top:280px ;
+    }
     .knifeTitle img{
         top: 100%;
         left: 50%;

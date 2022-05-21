@@ -7,8 +7,11 @@
 .mobileNav{
     display: none;
 }
+.MCabinet{
+    display: none;
+}
 .buttonM{
-    /* visibility:hidden; */
+    visibility:hidden;
     position: absolute;
     top: 85px;
     background-color: #E8AA31;
@@ -17,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 .buttonM div{
     display: flex;
@@ -657,6 +661,9 @@
     }
 }
 @media (max-width:992px) {
+    .buttonM{
+        visibility:visible;
+    }
     .circle{
         display: none;
     }
@@ -839,10 +846,38 @@
         flex-direction: column;
         height: 100%;
         position: fixed;
+        display: none;
     }
     .navUlPerson{
         flex-direction: column;
         position: relative;
     }
-
+    .LogoM a img{
+        width: 110px;
+        height: 25px;
+        object-fit: cover;
+    }
+    .mobileNav,
+    .heartAndCartHead{
+        display: none;
+    }
+    .buttonM{
+        top: 0;
+    }
+    .loubarHead{
+        border: none;
+    }
+    .searchLine{
+        top: 70px;
+    }
+    .imgHead{
+        margin-left: 60%;
+        transform: translateX(-50%);
+    }
+    .fa-user-alt{
+        color: white;
+    }
+    .MCabinet{
+        display: block;
+    }
 }

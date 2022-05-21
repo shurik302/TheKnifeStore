@@ -1,0 +1,54 @@
+.MobileMenu{
+    /* position: fixed; */
+    background-color: #141414;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    height: 100vh;
+    width: 40%;
+    /* position: absolute; */
+    /* transition: 1.5s; */
+}
+.MobileMenu ol{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+}
+.MobileMenu li{
+    width: 100%;
+    border-bottom: 1px solid #3D3D3D;
+    padding: 20px 0 20px 30px;
+}
+.fa-chevron-right{
+    position: absolute;
+    right: 20px;
+}
+/* Тут настройки для Navigation.js  */
+.menuClose{
+    height: 100vh;
+    width: 40%;
+    position: fixed;
+    left: -40%;
+    z-index: 11;
+    transition: 0.5s;
+    margin-top: 150px;
+    background-color: #141414;
+}
+.menuEscape{
+    overflow: hidden;
+    height: 100vh;
+    width: 40%;
+    position: fixed;
+    left: 0;
+    z-index: 11;
+    transition: 0.5s;
+    margin-top: 150px;
+    background-color: #141414;
+    
+}
+.bodyClose.menuEscape{
+    overflow: hidden;
+    height: 100vh;
+}
