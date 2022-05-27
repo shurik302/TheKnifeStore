@@ -74,7 +74,7 @@ function Navigation() {
               </form>
             </div>
             <div className='locationHead'>
-              <Link to=""><i class="fas fa-map-marker-alt"></i><span>москва</span></Link>
+              <Link to=""><i class="fas fa-map-marker-alt"></i><span>Киев</span></Link>
             </div>
             <div className='telHead'>
               <span>8-800-777-49-67<i class="fas fa-chevron-down"></i></span> 
