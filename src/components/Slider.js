@@ -32,25 +32,25 @@ export default class SimpleSlider extends Component {
           
             <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
-              <span className="titleBott">златоустовских ножей</span><br/>
+              <span className="titleBott">златоусовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>
             <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
-              <span className="titleBott">златоустовских ножей</span><br/>
+              <span className="titleBott">златоусовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>
             <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
-              <span className="titleBott">златоустовских ножей</span><br/>
+              <span className="titleBott">златоусовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>
             <div className="firstDivSlide">
               <span className="title">Интернет магазин сертифицированных</span><br/>  
-              <span className="titleBott">златоустовских ножей</span><br/>
+              <span className="titleBott">златоусовских ножей</span><br/>
               <span className="allDescription"><span className="descriptionSlider">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br/>представлен наиболее широкий выбор Златоустовских ножей от Златоустовских <br/>Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</span>
               <a href="#" className="TitleButton">Подробнее</a>
             </div>

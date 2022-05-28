@@ -7,10 +7,11 @@ import MobileMenu from '../components/MobileMenu';
 
 function Navigation() {
   const [Menu, setMenu] = useState(true);
+  
     return (
         <div className='navigHead'>
             <nav>
-              <div className='buttonM'onclick="myFunction()" onClick={() => setMenu(!Menu)}>
+              <div className='buttonM'/* onclick="myFunction()" */ onClick={() => setMenu(!Menu)}>
                 <div>
                   <div className='firstDivM DivM'></div>
                   <div className='secondDivM DivM'></div>

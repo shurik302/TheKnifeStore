@@ -34,7 +34,7 @@ function Home() {
                         </div>
                         <div className='transportTitle'>
                             <div><img src={transport}/></div>
-                            <span>Доставка по Украине, <br/>Казахстану и Белоруссии</span>
+                            <span>Доставка по Украине, <br/>Казахстану и Беларуси</span>
                         </div>
                     </div>
 
