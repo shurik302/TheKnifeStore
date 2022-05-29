@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.499a296f.css",
+    "main.js": "/static/js/main.69081bf9.js",
+    "static/js/787.545e9706.chunk.js": "/static/js/787.545e9706.chunk.js",
+    "static/media/background_bigWid.png": "/static/media/background_bigWid.58a2ad3a59baafc1d07d.png",
+    "static/media/second_knife.png": "/static/media/second_knife.9c70c90558c101ca7340.png",
+    "static/media/backgroundForBlock.png": "/static/media/backgroundForBlock.694182a6e593c526b3d4.png",
+    "static/media/first_knife.png": "/static/media/first_knife.e780225e9e4b7227b7e9.png",
+    "static/media/backtestknife.png": "/static/media/backtestknife.544d6c3cc872f9fec669.png",
+    "static/media/third_knife.png": "/static/media/third_knife.0f6684192a8411c20c4f.png",
+    "static/media/background-image_title.png": "/static/media/background-image_title.1f59dda9abfc7aeca54d.png",
+    "static/media/fonar.png": "/static/media/fonar.00c6aff6308eb4efd8f1.png",
+    "static/media/fCat.png": "/static/media/fCat.86c83cff733671a0af20.png",
+    "static/media/artage-io-thumb-.png": "/static/media/artage-io-thumb-.4d33463265fc31dae6c5.png",
+    "static/media/sCat.png": "/static/media/sCat.4f9996b8d6fc91d1c312.png",
+    "static/media/knifeLisa.png": "/static/media/knifeLisa.64e1c83c4f6c91cab611.png",
+    "index.html": "/index.html",
+    "main.499a296f.css.map": "/static/css/main.499a296f.css.map",
+    "main.69081bf9.js.map": "/static/js/main.69081bf9.js.map",
+    "787.545e9706.chunk.js.map": "/static/js/787.545e9706.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.499a296f.css",
+    "static/js/main.69081bf9.js"
+  ]
+}
