@@ -2,8 +2,21 @@ import React,{useState} from 'react';
 import '../stylesheets/MobileCSS.css';
 
 function MobileMenu() {
+  /* Конста меню первого порядка */
   const [Menu, setMenu] = useState(true);
-  const [ThirdMenu, setthirdMenu] = useState(true);
+  /* Конста меню второго порядка */
+  const [catalogdMenu, setcatalogdMenu] = useState(true);
+  const [klinkdMenu, setklinkdMenu] = useState(true);
+  const [suvenirMenu, setsuvenirMenu] = useState(true);
+  const [fonarMenu, setfonarMenu] = useState(true);
+  const [soputMenu, setsoputMenu] = useState(true);
+  /* Конста меню третьего порядка */
+  /* const [catalogdMenu, setcatalogdMenu] = useState(true);
+  const [klinkdMenu, setklinkdMenu] = useState(true);
+  const [suvenirMenu, setsuvenirMenu] = useState(true);
+  const [fonarMenu, setfonarMenu] = useState(true);
+  const [soputMenu, setsoputMenu] = useState(true); */
+  
   return (
     <>
       <div className='MobileMenu'>
@@ -23,15 +36,15 @@ function MobileMenu() {
       <div className={Menu? 'SecondMenuEscape':'SecondMenu'}>
         <ol>
               <li onClick={() => setMenu(!Menu)}><i class="fa-solid fa-angle-left"></i>Вернуться</li>
-              <li onClick={() => setthirdMenu(!ThirdMenu)}>Каталог ножей <i class="fa-solid fa-chevron-right"></i></li>
-              <li>Клинковое оружие <i class="fa-solid fa-chevron-right"></i></li>
-              <li>Сувенирные изделия <i class="fa-solid fa-chevron-right"></i></li>
-              <li>Фонари ARMYTEK <i class="fa-solid fa-chevron-right"></i></li>
-              <li>Сопуствующие товары <i class="fa-solid fa-chevron-right"></i></li>
-              <li>Топоры <i class="fa-solid fa-chevron-right"></i></li>
+              <li onClick={() => setcatalogdMenu(!catalogdMenu)}>Каталог ножей <i class="fa-solid fa-chevron-right"></i></li>
+              <li onClick={() => setklinkdMenu(!klinkdMenu)}>Клинковое оружие <i class="fa-solid fa-chevron-right"></i></li>
+              <li onClick={() => setsuvenirMenu(!suvenirMenu)}>Сувенирные изделия <i class="fa-solid fa-chevron-right"></i></li>
+              <li onClick={() => setfonarMenu(!fonarMenu)}>Фонари ARMYTEK <i class="fa-solid fa-chevron-right"></i></li>
+              <li onClick={() => setsoputMenu(!soputMenu)}>Сопуствующие товары <i class="fa-solid fa-chevron-right"></i></li>
+             
           </ol>
         </div>
-        <div className={ThirdMenu? 'CatalogMenuEscape':'CatalogMenu'}>
+        <div className={catalogdMenu? 'CatalogMenuEscape':'CatalogMenu'}>
           <ol>
               <li ><i class="fa-solid fa-angle-left"></i>Вернуться</li>
               <li>test <i class="fa-solid fa-chevron-right"></i></li>
@@ -39,7 +52,6 @@ function MobileMenu() {
               <li>test <i class="fa-solid fa-chevron-right"></i></li>
               <li>Фонари ARMYTEK <i class="fa-solid fa-chevron-right"></i></li>
               <li>Сопуствующие товары <i class="fa-solid fa-chevron-right"></i></li>
-              <li>Топоры <i class="fa-solid fa-chevron-right"></i></li>
           </ol>
         </div>
     </>
